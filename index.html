@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>CoffeShop</title>
+  </head>
+  <body>
+    <section class="section-one" id="Home">
+      <div class="circle"></div>
+      <header>
+        <a href="#Home"> <img src="assets/CoffeeLogo.png" alt="logo" width="120" height="120" /></a>
+
+        <ul class="section-one__menu">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About us</a></li>
+          <li><a href="#Community">Community</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </header>
+
+      <div class="section-one__content">
+        <div class="section-one__text-box">
+          <h2>
+            The best coffee ever? <br />
+            There you <span>go.</span>
+          </h2>
+
+          <p>Please get your email to receive news about drinks and promotion.</p>
+          <div id="content">
+            <form action="" id="form">
+              <input type="text" alt="name" placeholder="name" id="name" />
+              <input type="email" alt="email" placeholder="user@mail.com" id="email" />
+              <button type="submit" value="register">Register</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="section-one__img-box">
+          <img src="/assets/CoffeeDrink1.png" alt="Coffee drink one" class="coffeeDrink" />
+        </div>
+
+        <ul class="section-one__thumb">
+          <li>
+            <img
+              src="/assets/CoffeeDrink1.png"
+              alt="Drink one"
+              id="drink-one"
+              onclick="imgSlides('/assets/CoffeeDrink1.png'); changeCircleColor('#eead2d')"
+            />
+          </li>
+          <li>
+            <img
+              src="/assets/CoffeeDrink2.png"
+              alt="Drink two"
+              id="drink-two"
+              onclick="imgSlides('/assets/CoffeeDrink2.png'); changeCircleColor('#eca415')"
+            />
+          </li>
+          <li>
+            <img
+              src="/assets/CoffeeDrink3.png"
+              alt="Drink three"
+              id="drink-three"
+              onclick="imgSlides('/assets/CoffeeDrink3.png'); changeCircleColor('#d79411')"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-two" id="About">
+      <h2>About us</h2>
+      <div class="img-container">
+        <img src="/assets/CoffeeStore.jpeg" alt="Coffee Store" id="img-store" width="400px" height="300px" />
+      </div>
+      <p>
+        Lorem ipsum neque maecenas volutpat velit auctor egestas erat scelerisque, turpis eros elit platea velit
+        hendrerit blandit. nisl auctor ut tincidunt litora nec quam at ligula phasellus, dolor augue condimentum libero
+        urna vehicula elementum lacinia. praesent scelerisque arcu fusce mollis eleifend taciti, etiam tellus urna
+        hendrerit aliquam, nisl aptent leo cubilia primis.
+      </p>
+    </section>
+
+    <section class="section-three" id="Community">
+      <h2>Our community</h2>
+      <div class="img-container">
+        <img
+          src="/assets/CoffeeAttendant.jpg"
+          alt="Coffee Shop Attendant"
+          id="img-attendant"
+          width="300px"
+          height="200px"
+        />
+      </div>
+
+      <div class="img-container">
+        <img src="/assets/Testimonials1.png" alt="Testimonials" width="350px" height="250px" />
+      </div>
+    </section>
+
+    <section class="section-four" id="Contact">
+      <h2>Contact us</h2>
+      <div class="section-four__connect">
+        <div>
+          <h3>Let's connect</h3>
+          <p>
+            We're present on the main social medias. Let's be friends on intagram and facebook and if you want something
+            more formal let's connect on linkedIn. You can send us an email too!
+          </p>
+        </div>
+        <div class="icon-item">
+          <a href="https://www.instagram.com/eng.velasques/"
+            ><img src="/assets/instagram.png" alt="instagram icon"
+          /></a>
+          <a href="https://www.facebook.com/profile.php?id=100005458544637">
+            <img src="/assets/facebook.png" alt="facebook icon"
+          /></a>
+
+          <a href="https://www.linkedin.com/in/julianavelasquesbalta/">
+            <img src="/assets/linkedin.png" alt="linkedIn icon" />
+          </a>
+        </div>
+      </div>
+
+      <div class="section-four__message">
+        <h3>Send us a message</h3>
+        <form action="" class="message__form" id="form">
+          <label for="name">First & Last name*</label>
+          <input type="text" id="name" />
+          <label for="email">Email address*</label>
+          <input type="email" id="email" />
+          <label for="message">Message*</label>
+          <textarea class="msg" cols="35" rows="8" id="message"></textarea>
+          <div class="centralize-button">
+            <button type="submit" value="register">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>&copy All rights reserved.</footer>
+  </body>
+  <script src="/js/index.js"></script>
+</html>
